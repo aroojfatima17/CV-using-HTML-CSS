@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add your styles here */
+        body {
+            background-color: #f2f2f2; /* Light grey background */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            max-width: 150px;
+            max-height: 150px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .title {
+            text-align: left; /* centre-align the title */
+            flex: 1;
+        }
+
+        .title h1 {
+            margin: 0;
+        }
+
+        .title img {
+            max-width: 150px;
+            max-height: 150px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+
+        .bars {
+            display: flex;
+            align-items: center;
+        }
+
+        .bars p {
+            margin-right: 20px;
+            transition: color 0.3s;
+            color: #0077b5;
+            text-decoration: none;
+        }
+
+        .bars p:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            overflow: auto;
+        }
+
+        .skills {
+            width: 30%; /* Set the width of Skills section to 30% */
+            border: 10px solid #555; /* Different border color for Skills */
+            padding: 20px;
+            margin-right: 10px; /* Add margin between sections */
+        }
+
+        .projects {
+            flex: 1; /* Take remaining space */
+            border: 10px solid #777; /* Different border color for Projects */
+            padding: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .certifications {
+            text-align: left;
+            border: 10px solid #777;
+            padding: 20px;
+        }
+
+        .certifications ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">
+            <div class="title">
+                <img src="your_profile_picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="title">
+                <h1>DevOps Engineer</h1>
+                <h3>Arooj Fatima</h3>
+            </div>
+            <div class="bars">
+                <p><a href="address.html" target="_blank">Address</a></p>
+                <p><a href="contact.html" target="_blank">Contact</a></p>
+                <p><a href="https://www.linkedin.com/in/arooj-fatima-ab262023b" target="_blank">LinkedIn</a></p>
+                <p><a href="https://github.com/aroojfatima17" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages:
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                    <li>Cloud: AWS</li>
+                    <li>Database: SQL</li>
+                    <li>Operating System: Linux (Ubuntu, CentOS) </li>
+                    <li>Platforms/Tools:
+                        <ul>
+                            <li>Docker</li>
+                            <li>Jenkins</li>
+                            <li>GitHub</li>
+                            <li>Jira</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <h3>Projects</h3>
+                    <h5>Employee Management System</h5>
+                    <p>Description: DSA project to perform CRUD operations with user and admin access. </p>
+                </div>
+                <div class="project">
+                    <h5>Skip Tracing</h5>
+                    <p>Description: Python web scraping project to extract data in Excel file using selenium.</p>
+                </div>
+                <div class="project">
+                    <h5>AWS Beanstalk</h5>
+                    <p>Description: It includes AWS code commit, build service, S3 bucket and RDS database.</p>
+                </div>
+            </div>
+        </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>DevOps Certification from Udemy.</li>
+                    <li>Python Certification from PFTP.</li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
